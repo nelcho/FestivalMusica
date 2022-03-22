@@ -14,6 +14,7 @@ module.exports = {
   resolve: {
     alias: {
       '@img': path.resolve(__dirname, 'src/assets/img/'),
+      '@video': path.resolve(__dirname, 'src/assets/video/'),
       '@js': path.resolve(__dirname, 'src/js/'),
       '@css': path.resolve(__dirname, 'src/css/'),
       '@sass': path.resolve(__dirname, 'src/sass/'),
@@ -39,6 +40,15 @@ module.exports = {
         generator: {
           //filename: "assets/img/[hash][ext][query]",
           filename: "assets/img/[name][ext][query]",
+          //filename: "assets/img/thumb/[name][ext][query]",
+        },
+      },
+      {
+        test: /\.(mp4|ogg|webm)$/i,
+        type: "asset/resource",
+        generator: {
+          //filename: "assets/img/[hash][ext][query]",
+          filename: "assets/video/[name][ext][query]",
         },
       },
       {

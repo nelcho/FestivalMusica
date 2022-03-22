@@ -1,0 +1,45 @@
+.header {
+    background-color: $verde;
+
+    .contenido-header {
+        padding: $separacion / 2 0; // Forma de incluir un mixin
+
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    h1 {
+        color: $blanco;
+        margin-bottom: 1rem;
+        text-align: center;
+        @include tablet {
+            margin-bottom: 0;
+        }
+    }
+
+    &.fijo { // Esta parte es para que el menu se vea hacia abajo al hacer scroll
+        position: fixed;
+        width: 100%;
+        box-shadow: 0 .3rem .4rem #444;
+    }
+}
+
+
+.navegacion-principal {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    text-align: center;
+
+    a {
+        color: $blanco;
+        font-size: 2rem;
+
+        &:hover { // El "&" se refiere al elemento padre en este caso al selector a
+            color: $amarillo;
+        }
+    }
+}

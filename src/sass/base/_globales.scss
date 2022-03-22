@@ -1,0 +1,57 @@
+html {
+    box-sizing: border-box; /* Ayuda a controlar la dificultad de manejar el Box-Model y hace que el padding, el border y el margin no afecten los elementos */
+    font-size: 62.5%; /* Permite trabajar adecuadamente en medidas "rem" 1rem = 10px */
+}
+
+*, *:before, *:after { /* Ayuda a controlar la dificultad de manejar el Box-Model y esta catalogado como una de las mejores practicas en css */
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $fuentePrincipal;
+    font-size: 1.6rem;
+
+    //&.fijar-body {
+        //overflow: hidden; // Hace que se fije el body al abrir una imagen de la galeria
+    //}
+}
+
+p {
+    font-size: 2rem;
+    color: $negro;
+}
+
+.contenedor {
+    max-width: 120rem; /* Le da un ancho maximo al contenedor */
+    width: 95%; /* Hace que en dispositivos pequeños cuando no entra a funcionar el max-width, se tome maximo el 90% del espacio para mostrar contenido, de esa manera no se pegado al limite */
+    width: min(95%, 120rem); /* Hace lo mismo que las dos lineas de arriba pero en una sola linea */
+    margin: 0 auto; /* Permite centrar los contenidos en el contenedor */
+}
+
+a {
+    text-decoration: none; /* Elimina la linea en los enlaces */
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.6rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.6rem;
+}

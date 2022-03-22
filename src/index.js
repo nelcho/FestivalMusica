@@ -1,15 +1,35 @@
 import _ from 'lodash';
-import "@css/style.css";
-import "@sass/style.scss";
-import "@img/webpack-logo.png";
+import "@sass/app.scss";
+import "@js/app.js";
+import "@img/thumb/1.jpg";
+import "@img/thumb/2.jpg";
+import "@img/thumb/3.jpg";
+import "@img/thumb/4.jpg";
+import "@img/thumb/5.jpg";
+import "@img/thumb/6.jpg";
+import "@img/thumb/7.jpg";
+import "@img/thumb/8.jpg";
+import "@img/thumb/9.jpg";
+import "@img/thumb/10.jpg";
+import "@img/thumb/11.jpg";
+import "@img/thumb/12.jpg";
+import "@img/grande/g1.jpg";
+import "@img/grande/g2.jpg";
+import "@img/grande/g3.jpg";
+import "@img/grande/g4.jpg";
+import "@img/grande/g5.jpg";
+import "@img/grande/g6.jpg";
+import "@img/grande/g7.jpg";
+import "@img/grande/g8.jpg";
+import "@img/grande/g9.jpg";
+import "@img/grande/g10.jpg";
+import "@img/grande/g11.jpg";
+import "@img/grande/g12.jpg";
+import "@img/icono_edm.png";
+import "@img/icono_rock.png";
+import "@img/imagen_rock.jpg";
+import "@img/imagen_vocalista.jpg";
+import "@video/concierto.mp4";
+import "@video/concierto.ogg";
+import "@video/concierto.webm";
 
-
-function component() {
-    const element = document.createElement('div');
-  
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  
-    return element;
-  }
-  
-  document.body.appendChild(component());
